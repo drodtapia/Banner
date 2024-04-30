@@ -1,77 +1,95 @@
-# Velocidad** y Fuerza de Lorentz de Particulas en C++
+# Banner en Python
 
 ## Descripción
 
-Este programa en C++ es una herramienta diseñada para analizar un conjunto de particulas cuya cinemática es descrita por,
-$$\vec{r}_n(t,n)= \frac{2\pi t}{n}\cos^5(nt)\sin^3(\cos(t/n))\hat{x}+3n\pi t\cos^3(\cos(\sin(t/n)))\hat{y}+n\pi t^2\cos^4(\exp(-nt))\hat{z}$$
-y determinar el modulo de la  **Velocidad** y **Fuerza de Lorentz** más alta y más baja dentro de este conjunto.
-donde $n \geq 1$ representa la partıcula n-esima. El numero de partıculas lo leera de la
-primera lınea de un archivo de la forma,
+Este programa en Python es capaz de emular el comando banner, el cual muestra una representación ascii de un texto ingresado por
+el usuario. El programa debe ademas permitir al usuario escoger entre 6 tipos de decoraciones muy llamativas y 7 colores diferentes:
+## Características
+- Generación de Banners: Permite al usuario generar banners de texto personalizados.
+- Personalización del Mensaje: Permite al usuario ingresar un mensaje personalizado para mostrar en el banner.
+## Uso
 
-$$\begin{matrix}
- N  & & &  &  &  &  & &&&&&&&&
-\end{matrix}\\$$
+En este programa podremos ingresar palabras y mostrarlas en pantalla de forma llamativa, de manera de que cada caracter se forme a sí mismo en grande. Cabe mencionar que hace distinción entre mayúsculas y minúsculas. Por otro lado, podemos hacer uso de los signos de puntuación, espacios y se puede truncar la salida si es que la palabra excede los diez caracteres (así que si la palabra no se ve, es posible que se deba al tamaño de la terminal).
 
-$$\begin{matrix}
- &Q_1& E_{1x} &E_{1y}  &E_{1z}  &B_{1x}  &B_{1y}  &B_{1z} \\ 
-&\vdots &\vdots  &\vdots  &\vdots  &\vdots  & \vdots & \vdots\\ 
-&Q_n& E_{nx} &E_{ny}  &E_{nz}  &B_{nx}  &B_{ny}  &B_{nz}& 
-\end{matrix}$$
-
-donde $N$ es el numero total de partıculas, $E_{ni}$ es el campo electrico en la componente
-$i = x, y, z$ y $B_{ni}$ es el campo magnetico en la componente $i = x, y, z$. El valor de $N$ sera
-arbitrario para cualquier conjunto de datos.
-## Instrucciones de Uso
-- El proyecto incluye un archivo Makefile para facilitar la compilación del programa.
-- Asegúrate de que el directorio de fuente contenga todos los archivos del repositorio para compilar el programa.
-
-## Funcionalidades del Makefile:
-El Makefile proporciona las siguientes funcionalidades adicionales:
-run: Para ejecutar el programa una vez compilado
+En este banner se pueden elegir 6 tipos de decoraciones muy llamativas y 7 colores diferentes:
 ```bash
-make run
+1.Rojo
+2.Verde
+3.Amarillo
+4.Azul
+5.Morado
+6.Cian
+7.Blanco
 ```
-clean: Sirve para borrar los archivos con extensión .o y extensión .~
-```bash
-make clean
-```
-borra: Abarca un poco más que clean, solo que ahora además borra los .dat, png y .exe
-```bash
-make run
-```
-### Compilación:
-- Abre una terminal en el directorio donde se encuentra los archivo del repositorio.
+Y por si fuera poco, tiene un lindo pingüino al iniciar el programa.
+
+### Ejecución:
+- Asegúrate de tener Python instalado en tu sistema.
+- Abre una terminal en el directorio donde se encuentra el archivo fuente `Banner.py`.
 - Compila el programa utilizando el siguiente comando:
 ```bash
-  make
-
+  python Banner.py 
 ```
-### Ejecución:
-Una vez compilado, ejecute el siguiente comando y siga las instrucciones proporcionadas en pantalla
-```bash
-  make run
-```  
+- Sigue las instrucciones en pantalla para escribir el mensaje que deseas convertir en un banner y seleccionar una decoración y un color.
 ### Requisitos y Dependencias:
-- Compilador de C++: Necesitarás un compilador de C++ instalado en tu sistema. Por ejemplo, GCC en sistemas Unix/Linux o MinGW en Windows.
-- Make: Necesitarás tener la herramienta make instalada en tu sistema para poder utilizar el archivo Makefile y compilar tu proyecto.
+Asegúrate de tener Python instalado en tu sistema.
 
 ### Ejemplos y Demostraciones:
-A continuación se muestra un ejemplo del programa:
+Al ejecutar el programa y seguir las instrucciones proporcionadas en pantalla, se puede generar un banner personalizado. A continuación se muestra un ejemplo del programa en acción:
 ```bash
-$ make run
-Ingrese el nombre del archivo que contiene los datos de la particula (nombre_archivo.txt) o path: datos.dat
-
-La partícula más rapida es: 𝑽_131: -3.0786x̂ + 207.854ŷ +8650.17 ẑ
-La partícula más lenta es: 𝑽_1: 0.0110245x̂ + 4.85198ŷ +65.4154 ẑ
-La partÍcula que se ve expuesta a una mayor fuerza de Lorentz es: F_131: 42144.2x̂ + 8536.09ŷ +-190.101 ẑ
-La partÍcula que se ve expuesta a una menor fuerza de Lorentz es: F_1: -5.39228x̂ + -0.830447ŷ +-0.540302 ẑ
-
+$ py banner.py
+                  .88888888:.
+                88888888.88888.
+              .8888888888888888.
+              888888888888888888
+              88' _`88'_  `88888
+              88 88 88 88  88888
+              88_88_::_88_:88888
+              88:::,::,:::::8888
+              88`:::::::::'`8888
+             .88  `::::'    8:88.
+            8888            `8:888.
+          .8888'             `888888.
+         .8888:..  .::.  ...:'8888888:.
+        .8888.'     :'     `'::`88:88888
+       .8888        '         `.888:8888.
+      888:8         .           888:88888
+    .888:88        .:           888:88888:
+    8888888.       ::           88:888888
+    `.::.888.      ::          .88888888
+   .::::::.888.    ::         :::`8888'.:.
+  ::::::::::.888   '         .::::::::::::
+  ::::::::::::.8    '      .:8::::::::::::.
+ .::::::::::::::.        .:888:::::::::::::
+ :::::::::::::::88:.__..:88888:::::::::::'
+  `'.:::::::::::88888888888.88:::::::::'
+       `':::_:' -- '' -'-' `':_::::'`
+Ingresar palabra u oración: hola
+Tipo de decoración (marcar un numero del 1 al 6): 2
+Color (marcar un numero del 1 al 7): 7
+#-#--#-##-#--#-##-#--#-##-#--#-##-#--#-##-#--#-#
+#-#--#-##-#--#-##-#--#-##-#--#-##-#--#-##-#--#-#
+#-#--#-##-#--#-##-#--#-##-#--#-##-#--#-##-#--#-#
+#-#-#                                      #-#-#
+#-#-#                                      #-#-#
+#-#-#                                      #-#-#
+#-#-#    h    h   oooo   l         aa      #-#-#
+#-#-#    h    h  o    o  l        a  a     #-#-#
+#-#-#    hhhhhh  o    o  l       a    a    #-#-#
+#-#-#    h    h  o    o  l       aaaaaa    #-#-#
+#-#-#    h    h  o    o  l       a    a    #-#-#
+#-#-#    h    h   oooo   llllll  a    a    #-#-#
+#-#-#                                      #-#-#
+#-#-#                                      #-#-#
+#-#--#-##-#--#-##-#--#-##-#--#-##-#--#-##-#--#-#
+#-#--#-##-#--#-##-#--#-##-#--#-##-#--#-##-#--#-#
+#-#--#-##-#--#-##-#--#-##-#--#-##-#--#-##-#--#-#
 ```
 ### Contribución y Colaboración
 
 ¡Tu contribución es bienvenida! Si deseas contribuir con mejoras, correcciones o nuevas características, aquí hay algunas formas de hacerlo:
 
-1. **Informar Problemas:** Si encuentras errores o tienes ideas para nuevas características, por favor abre un problema en el [rastreador de problemas](https://github.com/drodtapia/Particulas/issues).
+1. **Informar Problemas:** Si encuentras errores o tienes ideas para nuevas características, por favor abre un problema en el [rastreador de problemas](https://github.com/drodtapia/Banner/issues).
    
 2. **Enviar Pull Requests:** Si has realizado mejoras en el código, puedes enviar un pull request. Asegúrate de que tu código esté bien probado y documentado.
 
