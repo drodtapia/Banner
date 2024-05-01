@@ -37,7 +37,7 @@ Asegúrate de tener Python instalado en tu sistema.
 ### Ejemplos y Demostraciones:
 Al ejecutar el programa y seguir las instrucciones proporcionadas en pantalla, se puede generar un banner personalizado. A continuación se muestra un ejemplo del programa en acción:
 ```bash
-$ py banner.py
+$ python3 banner.py
                   .88888888:.
                 88888888.88888.
               .8888888888888888.
