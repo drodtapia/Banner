@@ -24,7 +24,7 @@ En este banner se pueden elegir 6 tipos de decoraciones muy llamativas y 7 color
 Y por si fuera poco, tiene un lindo pingüino al iniciar el programa.
 
 ### Ejecución:
-- Asegúrate de tener Python instalado en tu sistema.
+- Asegúrate de tener Python3 instalado en tu sistema.
 - Abre una terminal en el directorio donde se encuentra el archivo fuente `Banner.py`.
 - Compila el programa utilizando el siguiente comando:
 ```bash
