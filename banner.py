@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
 #A continuacion se muestran los diccionarios utilizados para formar las palabras del banner.
